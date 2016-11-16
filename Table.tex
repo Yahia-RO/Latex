@@ -1,1 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+%\documentclass[letterpaper,twocolumn,11pt]{article}
+\usepackage{amsmath,amssymb,amsbsy,amsfonts,amsthm,latexsym,amsopn,amstext,amsxtra,euscript,amscd}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%Authors Part%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*{\affaddr}[1]{#1} % No op here. Customize it for different styles.
+\newcommand*{\affmark}[1][*]{\textsuperscript{#1}}
+\newcommand*{\email}[1]{\texttt{#1}}
+\date{}
+\title{\Large\bfseries Congruence For Geometric Polynomials}
+\author{
+Yahia Djemmada\affmark[1], Hac\`ene Belbachir\affmark[1], %Author C\affmark[1], Author D\affmark[2], and Author E\affmark[2]
+\\
+\email{\{Yahia.djem,Hacenebelbachir\}@gmail.com}\\
+\\
+\affaddr{\affmark[1]CATI Team, Recits Laboratory, USTHB, Algiers, Algeria.}\\
+%\affaddr{USTHB}%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{example*}{Example\\}
+\newtheorem{cor}[theorem]{Corollary}
+\newtheorem{rem}[theorem]{Remark}
 
+\newcommand {\N}{{\mathbb N}}
+\newcommand {\Z}{{\mathbb Z}}
+%\newcommand {\Q}{{\mathbb Q}}
+\newcommand {\R}{{\mathbb R}}
+%\newcommand {\C}{{\mathbb C}}
+%\newcommand {\M}{{\mathbf{M}}}
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords. }} {\small #1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{theorem}\label
+for all m $\geq$ 0 we have,
+$$\sum_{k=0}^{n}S_1\left(n,k\right)F_{m+k}(t)\equiv 0[t^{n}n!] $$
+\end{theorem}
+$
+\begin{array}{l}
+ t \\
+ 2 t^2 \\
+ 6 t^3 \\
+ 24 t^4 \\
+ 120 t^5 \\
+ 720 t^6 \\
+ 5040 t^7 \\
+ 40320 t^8 \\
+\hline \end{array},\\\begin{array}{l}
+ t (1+2 t) \\
+ 2 t^2 (2+3 t) \\
+ 6 t^3 (3+4 t) \\
+ 24 t^4 (4+5 t) \\
+ 120 t^5 (5+6 t) \\
+ 720 t^6 (6+7 t) \\
+ 5040 t^7 (7+8 t) \\
+ 40320 t^8 (8+9 t) \\
+\hline \end{array},\\\begin{array}{l}
+ t \left(1+6 t+6 t^2\right) \\
+ 2 t^2 \left(4+15 t+12 t^2\right) \\
+ 6 t^3 (1+2 t) (9+10 t) \\
+ 24 t^4 \left(16+45 t+30 t^2\right) \\
+ 120 t^5 \left(25+66 t+42 t^2\right) \\
+ 720 t^6 \left(36+91 t+56 t^2\right) \\
+ 5040 t^7 \left(49+120 t+72 t^2\right) \\
+ 40320 t^8 \left(64+153 t+90 t^2\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t (1+2 t) \left(1+12 t+12 t^2\right) \\
+ 2 t^2 \left(8+57 t+108 t^2+60 t^3\right) \\
+ 6 t^3 \left(27+148 t+240 t^2+120 t^3\right) \\
+ 24 t^4 \left(64+305 t+450 t^2+210 t^3\right) \\
+ 120 t^5 \left(125+546 t+756 t^2+336 t^3\right) \\
+ 720 t^6 \left(216+889 t+1176 t^2+504 t^3\right) \\
+ 5040 t^7 \left(343+1352 t+1728 t^2+720 t^3\right) \\
+ 40320 t^8 \left(512+1953 t+2430 t^2+990 t^3\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t \left(1+30 t+150 t^2+240 t^3+120 t^4\right) \\
+ 2 t^2 \left(16+195 t+660 t^2+840 t^3+360 t^4\right) \\
+ 6 t^3 \left(81+700 t+1940 t^2+2160 t^3+840 t^4\right) \\
+ 24 t^4 \left(256+1845 t+4530 t^2+4620 t^3+1680 t^4\right) \\
+ 120 t^5 \left(625+4026 t+9114 t^2+8736 t^3+3024 t^4\right) \\
+ 720 t^6 \left(1296+7735 t+16520 t^2+15120 t^3+5040 t^4\right) \\
+ 5040 t^7 \left(2401+13560 t+27720 t^2+24480 t^3+7920 t^4\right) \\
+ 40320 t^8 \left(4096+22185 t+43830 t^2+37620 t^3+11880 t^4\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t (1+2 t) \left(1+60 t+420 t^2+720 t^3+360 t^4\right) \\
+ 2 t^2 \left(32+633 t+3420 t^2+7500 t^3+7200 t^4+2520 t^5\right) \\
+ 6 t^3 \left(243+3124 t+13200 t^2+24600 t^3+21000 t^4+6720 t^5\right) \\
+ 24 t^4 \left(1024+10505 t+38250 t^2+64050 t^3+50400 t^4+15120 t^5\right) \\
+ 120 t^5 \left(3125+27906 t+91980 t^2+142800 t^3+105840 t^4+30240 t^5\right) \\
+ 720 t^6 \left(7776+63217 t+194040 t^2+284760 t^3+201600 t^4+55440 t^5\right) \\
+ 5040 t^7 \left(16807+127688 t+371520 t^2+522000 t^3+356400 t^4+95040 t^5\right) \\
+ 40320 t^8 \left(32768+236529 t+660150 t^2+895950 t^3+594000 t^4+154440 t^5\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t \left(1+126 t+1806 t^2+8400 t^3+16800 t^4+15120 t^5+5040 t^6\right) \\
+ 2 t^2 \left(64+1995 t+16212 t^2+54600 t^3+88200 t^4+68040 t^5+20160 t^6\right) \\
+ 6 t^3 \left(729+13468 t+81620 t^2+226800 t^3+319200 t^4+221760 t^5+60480 t^6\right) \\
+ 24 t^4 \left(4096+57645 t+292530 t^2+716100 t^3+915600 t^4+589680 t^5+151200 t^6\right) \\
+ 120 t^5 \left(15625+186186 t+839202 t^2+1878240 t^3+2237760 t^4+1360800 t^5+332640 t^6\right) \\
+ 720 t^6 \left(46656+496951 t+2058056 t^2+4309200 t^3+4863600 t^4+2827440 t^5+665280 t^6\right) \\
+ 5040 t^7 \left(117649+1155960 t+4492872 t^2+8935200 t^3+9662400 t^4+5417280 t^5+1235520 t^6\right) \\
+ 40320 t^8 \left(262144+2423673 t+8966790 t^2+17117100 t^3+17879400 t^4+9729720 t^5+2162160 t^6\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t (1+2 t) \left(1+252 t+5292 t^2+30240 t^3+65520 t^4+60480 t^5+20160 t^6\right) \\
+ 2 t^2 \left(128+6177 t+72828 t^2+354060 t^3+856800 t^4+1093680 t^5+705600 t^6+181440 t^7\right) \\
+ 6 t^3 \left(2187+56788 t+475440 t^2+1850520 t^3+3822000 t^4+4327680 t^5+2540160 t^6+604800 t^7\right) \\
+ 24 t^4 \left(16384+308705 t+2101050 t^2+7060410 t^3+13053600 t^4+13547520 t^5+7408800 t^6+1663200 t^7\right) \\
+ 120 t^5 \left(78125+1210866 t+7177716 t^2+21739536 t^3+37044000 t^4+35985600 t^5+18627840 t^6+3991680 t^7\right) \\
+ 720 t^6 \left(279936+3805249 t+20440056 t^2+57305304 t^3+91728000 t^4+84601440 t^5+41912640 t^6+8648640 t^7\right) \\
+ 5040 t^7 \left(823543+10188872 t+50839488 t^2+134280720 t^3+204573600 t^4+180956160 t^5+86486400 t^6+17297280 t^7\right) \\
+ 40320 t^8 \left(2097152+24172353 t+113904630 t^2+286922790 t^3+419958000 t^4+358918560 t^5+166486320 t^6+32432400 t^7\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t \left(1+510 t+18150 t^2+186480 t^3+834120 t^4+1905120 t^5+2328480 t^6+1451520 t^7+362880 t^8\right) \\
+ 2 t^2 \left(256+18915 t+316020 t^2+2134440 t^3+7265160 t^4+13653360 t^5+14394240 t^6+7983360 t^7+1814400 t^8\right) \\
+ 6 t^3 \left(6561+235900 t+2661140 t^2+13955760 t^3+39707640 t^4+65197440 t^5+61810560 t^6+31449600 t^7+6652800 t^8\right) \\
+ 24 t^4 \left(65536+1625445 t+14458530 t^2+64130220 t^3+160912080 t^4+239410080 t^5+209563200 t^6+99792000 t^7+19958400 t^8\right) \\
+ 120 t^5 \left(390625+7733946 t+58720074 t^2+231338016 t^3+529051824 t^4+730296000 t^5+600747840 t^6+271434240 t^7+51891840 t^8\right) \\
+ 720 t^6 \left(1679616+28596295 t+193962440 t^2+699708240 t^3+1490333040 t^4+1939623840 t^5+1518168960 t^6+657296640 t^7+121080960 t^8\right) \\
+ 5040 t^7 \left(5764801+88099320 t+549255240 t^2+1851202080 t^3+3727397520 t^4+4626357120 t^5+3476753280 t^6+1452971520 t^7+259459200 t^8\right) \\
+ 40320 t^8 \left(16777216+236425545 t+1380769830 t^2+4409101620 t^3+8482569480 t^4+10125395280 t^5+7355668320 t^6+2983780800 t^7+518918400 t^8\right) \\
+\hline \end{array},\\\begin{array}{l}
+ t (1+2 t) \left(1+1020 t+53940 t^2+710640 t^3+3681720 t^4+9072000 t^5+11491200 t^6+7257600 t^7+1814400 t^8\right) \\
+ 2 t^2 \left(512+57513 t+1339740 t^2+12252300 t^3+56397600 t^4+146429640 t^5+224380800 t^6+201398400 t^7+97977600 t^8+19958400 t^9\right) \\
+ 6 t^3 \left(19683+969844 t+14485200 t^2+99701400 t^3+375643800 t^4+839240640 t^5+1143072000 t^6+932601600 t^7+419126400 t^8+79833600 t^9\right) \\
+ 24 t^4 \left(262144+8454905 t+96503850 t^2+550121250 t^3+1800338400 t^4+3602899440 t^5+4489732800 t^6+3402907200 t^7+1437004800 t^8+259459200 t^9\right) \\
+ 120 t^5 \left(1953125+48747426 t+465178140 t^2+2320464720 t^3+6843508560 t^4+12593478240 t^5+14641482240 t^6+10466184960 t^7+4203239040 t^8+726485760 t^9\right) \\
+ 720 t^6 \left(10077696+211931377 t+1780469880 t^2+8043036120 t^3+21900412800 t^4+37729525680 t^5+41493513600 t^6+28281052800 t^7+10897286400 t^8+1816214400 t^9\right) \\
+ 5040 t^7 \left(40353607+750912968 t+5736191040 t^2+24004573200 t^3+61364595600 t^4+100245055680 t^5+105340435200 t^6+69016147200 t^7+25686460800 t^8+4151347200 t^9\right) \\
+ 40320 t^8 \left(134217728+2278824849 t+16171953750 t^2+63688585950 t^3+154700053200 t^4+241903541880 t^5+244734890400 t^6+155091736800 t^7+56043187200 t^8+8821612800 t^9\right) \\
+\end{array}$
+\end{document}
